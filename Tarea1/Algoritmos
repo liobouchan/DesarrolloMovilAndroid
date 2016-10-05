@@ -1,0 +1,73 @@
+// 1; Factorial de un número
+  public int factorial (double numero) {
+    if (numero==0)
+      return 1;
+    else
+      return numero * factorial(numero-1);
+  }
+
+// 2; Número Primo
+  import java.util.Scanner;
+  public class Main {
+       public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+           int a=0,i,n;
+           System.out.println("Ingrese numero");
+           n=sc.nextInt();
+           for(i=1;i<(n+1);i++){
+           if(n%i==0){
+               a++;
+              }
+           }
+           if(a!=2){
+                System.out.println("No es Primo");
+              }else{
+                  System.out.println("Si es Primo");
+           }
+       }
+  }
+
+// 3; Fibonaccio
+  import java.util.Scanner;
+  public class Main {
+       public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+           int a=0,i,n;
+           System.out.println("Ingrese numero");
+           n=sc.nextInt();
+           for(i=1;i<(n+1);i++){
+           if(n%i==0){
+               a++;
+              }
+           }
+           if(a!=2){
+                System.out.println("No es Primo");
+              }else{
+                  System.out.println("Si es Primo");
+           }
+       }
+  }
+
+// 4; Calcular Seno , Coseno, Tangente
+
+  import java.util.Scanner;
+  public class FuncionSCT {
+      public static void main(String[] args) {
+          double a;
+          Scanner num = new Scanner(System.in);
+          try {
+              System.out.print("Introduce un ángulo de (0...360°): ");
+              a = num.nextDouble();
+              anguloCal(a);
+          } catch (Exception e) {
+              System.out.println("ERROR: Datos incorrectos.");
+          }
+      }
+      static void anguloCal(double a){
+          //Primer punto, pasa "a" a radianes.
+          double b = Math.toRadians(a);
+          System.out.println("Seno de " + a + " es: " + Math.sin(b) );
+          System.out.println("Coseno de " + a + " es: " + Math.cos(b) );
+          System.out.println("Tangente de " + a + " es: " + Math.tan(b) );
+      }
+  }
