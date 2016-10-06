@@ -12,17 +12,20 @@
         android:layout_height="match_parent"
         android:background="#000000"
         android:padding="12dp">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FFFFFF"
             android:padding="5dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/txtMensaje"
                 android:textColor="#000000"
                 android:text="Mi Wirdget"/>
+
         </FrameLayout>
     </FrameLayout>
 </LinearLayout>
