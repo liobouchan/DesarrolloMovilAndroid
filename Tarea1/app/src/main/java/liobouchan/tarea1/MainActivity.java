@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 numeroDouble = Double.valueOf(editTextNumero.getText().toString());
 
                 bundle.putString("resultadoFactorial", String.valueOf(algoritmo.factorial(numeroDouble)));
+                bundle.putString("resultadoPrimo", algoritmo.esPrimo(numeroDouble));
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

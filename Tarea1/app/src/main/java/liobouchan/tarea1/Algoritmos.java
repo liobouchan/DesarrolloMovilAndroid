@@ -11,4 +11,21 @@ public class Algoritmos {
         else
             return numero * factorial(numero-1);
     }
+
+    public String esPrimo (double numero){
+        int a = 0;
+
+        for(int i = 1; i<(numero+1);i++){
+            if (numero%i == 0){
+                a++;
+            }
+        }
+
+        if (a!=2){
+            return "No es Primo";
+        }else{
+            return "Si es Primo";
+        }
+    }
+
 }
