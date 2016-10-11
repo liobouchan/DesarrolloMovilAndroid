@@ -1,10 +1,12 @@
 package liobouchan.tarea1;
 
+
 /**
  * Created by liobouchan on 10/10/16.
  */
 
 public class Algoritmos {
+
     public double factorial (double numero) {
         if (numero==0)
             return 1;
@@ -26,6 +28,21 @@ public class Algoritmos {
         }else{
             return "Si es Primo";
         }
+    }
+
+    public double calcularSeno(double numero){
+        double numeroEnRadianes = Math.toRadians(numero);
+        return Math.sin(numeroEnRadianes);
+    }
+
+    public double calcularCoseno(double numero){
+        double numeroEnRadianes = Math.toRadians(numero);
+        return Math.cos(numeroEnRadianes);
+    }
+
+    public double calcularTangente(double numero){
+        double numeroEnRadianes = Math.toRadians(numero);
+        return Math.tan(numeroEnRadianes);
     }
 
 }

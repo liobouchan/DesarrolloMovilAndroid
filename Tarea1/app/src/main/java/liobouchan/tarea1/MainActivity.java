@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
                 bundle.putString("resultadoFactorial", String.valueOf(algoritmo.factorial(numeroDouble)));
                 bundle.putString("resultadoPrimo", algoritmo.esPrimo(numeroDouble));
+                bundle.putString("resultadoSeno", String.valueOf(algoritmo.calcularSeno(numeroDouble)));
+                bundle.putString("resultadoCoseno", String.valueOf(algoritmo.calcularCoseno(numeroDouble)));
+                bundle.putString("resultadoTangente", String.valueOf(algoritmo.calcularTangente(numeroDouble)));
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
