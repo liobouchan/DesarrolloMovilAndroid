@@ -46,36 +46,37 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public double ResolverX1(int a, int b, int c){
+    public String ResolverX1(int a, int b, int c){
         double discriminante;
-        double x1;
+        String x1;
 
         discriminante = b*b-4*a*c;
 
         if (discriminante < 0) {
             System.out.println ("La Ecuacion No Tiene Soluciones Reales");
-            x1 = 0.0;
+            //x1 = 0.0;
+            x1 = String.valueOf("No Tiene Solución Real");
         }else {
             System.out.println ("La ecuacion tiene dos raizes reales");
-            x1 = (-b+Math.sqrt(discriminante))/2.0/a;
+            x1 = String.valueOf((-b+Math.sqrt(discriminante))/2.0/a);
             System.out.println ("La Solucion es, X1 = " +x1+ " y, X2 = ");
         }
 
         return x1;
     }
 
-    public double ResolverX2(int a, int b, int c){
+    public String ResolverX2(int a, int b, int c){
         double discriminante;
-        double x2;
+        String x2;
 
         discriminante = b*b-4*a*c;
 
         if (discriminante < 0) {
             System.out.println("La Ecuacion No Tiene Soluciones Reales");
-            x2 = 0.0;
+            x2 = "No tiene solución Real";
         }else {
             System.out.println ("La ecuacion tiene dos raizes reales");
-            x2 = (-b - Math.sqrt(discriminante)) / 2.0/a;
+            x2 = String.valueOf((-b - Math.sqrt(discriminante)) / 2.0/a);
             System.out.println ("La Solucion es, X1 = " +x2+ " y, X2 = ");
         }
 
