@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ecuacion De Segundo Grado</string>
+    <string name="Titulo">Indica los valores de la ecuación a resolver</string>
+    <string name="A">Variable a :</string>
+    <string name="B">Variable b :</string>
+    <string name="C">Variable c :</string>
+    <string name="Resolver">Resolver Ecuación</string>
+</resources>
