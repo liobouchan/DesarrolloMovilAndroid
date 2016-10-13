@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText editTextNumero;
     private Button botonMaravilloso;
-    private int numero;
+    private String numero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this , Solucion.class);
                 Bundle bundle = new Bundle();
 
-                numero = Integer.valueOf(editTextNumero.getText().toString());
+                numero = editTextNumero.getText().toString();
 
-                bundle.putString("numeroMaravilloso", String.valueOf("El número " + numero + " es maravilloso"));
+                bundle.putString("numeroMaravilloso", numero);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
